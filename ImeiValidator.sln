@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeiValidator", "ImeiValidator\ImeiValidator.csproj", "{5A724687-762F-4F0F-81D2-DD4C197E3DFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeiValidator.WebService", "ImeiValidator.WebService\ImeiValidator.WebService.csproj", "{95CDC8BF-0247-44BC-A414-572A3DD2752D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeiValidator.Integration.Tests", "ImeiValidator.Integration.Tests\ImeiValidator.Integration.Tests.csproj", "{2F9176BD-034A-49D0-B1DE-450E06D0ADA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeiValidator.ConsoleApplication", "ImeiValidator.ConsoleApplication\ImeiValidator.ConsoleApplication.csproj", "{3BAF7F4A-936C-496F-9FE6-3591B5BCF694}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A724687-762F-4F0F-81D2-DD4C197E3DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A724687-762F-4F0F-81D2-DD4C197E3DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A724687-762F-4F0F-81D2-DD4C197E3DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A724687-762F-4F0F-81D2-DD4C197E3DFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95CDC8BF-0247-44BC-A414-572A3DD2752D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95CDC8BF-0247-44BC-A414-572A3DD2752D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95CDC8BF-0247-44BC-A414-572A3DD2752D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95CDC8BF-0247-44BC-A414-572A3DD2752D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F9176BD-034A-49D0-B1DE-450E06D0ADA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F9176BD-034A-49D0-B1DE-450E06D0ADA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F9176BD-034A-49D0-B1DE-450E06D0ADA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F9176BD-034A-49D0-B1DE-450E06D0ADA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BAF7F4A-936C-496F-9FE6-3591B5BCF694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BAF7F4A-936C-496F-9FE6-3591B5BCF694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BAF7F4A-936C-496F-9FE6-3591B5BCF694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BAF7F4A-936C-496F-9FE6-3591B5BCF694}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
