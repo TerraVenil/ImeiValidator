@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Net;
 using System.ServiceModel;
+using System.Threading.Tasks;
 
 using Autofac;
 
@@ -8,8 +9,6 @@ using ImeiValidator.WebService;
 using ImeiValidator.WebService.ImeiService;
 
 using NUnit.Framework;
-
-using System.Threading.Tasks;
 
 namespace ImeiValidator.Integration.Tests
 {
