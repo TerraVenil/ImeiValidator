@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeiValidator.Integration.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeiValidator.ConsoleApplication", "ImeiValidator.ConsoleApplication\ImeiValidator.ConsoleApplication.csproj", "{3BAF7F4A-936C-496F-9FE6-3591B5BCF694}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeiValidator.NUnitTests", "ImeiValidator.NUnitTests\ImeiValidator.NUnitTests.csproj", "{92572474-78C0-4A45-81E4-6DFE8EFBAB9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3BAF7F4A-936C-496F-9FE6-3591B5BCF694}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BAF7F4A-936C-496F-9FE6-3591B5BCF694}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BAF7F4A-936C-496F-9FE6-3591B5BCF694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92572474-78C0-4A45-81E4-6DFE8EFBAB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92572474-78C0-4A45-81E4-6DFE8EFBAB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92572474-78C0-4A45-81E4-6DFE8EFBAB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92572474-78C0-4A45-81E4-6DFE8EFBAB9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
