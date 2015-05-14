@@ -1,20 +1,18 @@
-﻿<!-- ko with: home -->
-<div class="cta-imei">
+﻿<div class="cta-imei">
     <div class="container text-center">
         <h2>А ти впевнений що твій телефон білий?</h2>
         <h4>Перевір IMEI свого телефону і спи спокійно!</h4>
         <div id="imei_validation">
-            <div class="input-group input-group-lg">
-                <input type="text" name="IMEI" class="form-control" id="imei-IMEI" placeholder="Введіть IMEI...">
+            <div class="input-group input-group-lg" data-bind="with: requestImeiViewModel">
+                <input type="text" name="IMEI" class="form-control" id="imei-IMEI" placeholder="Введіть IMEI..." data-bind="value: number">
                 <span class="input-group-btn">
-                    <button name="validate" id="imei-validation-validate" class="btn btn-default">Перевірити!</button>
+                    <button name="validate" id="imei-validation-validate" class="btn btn-default" data-bind="click: validate">Перевірити!</button>
                 </span>
             </div>
-            <div id="imei-responses">
+            <div id="imei-responses" data-bind="with: responseImeiViewModel">
                 <div id="imei-error-response" style="display:none"></div>
-                <div id="imei-success-response" style="display:none"></div>
+                <div class="alert alert-success" style="display: inline-block" role="alert" data-bind="visible: status, text: status"></div>
             </div>
         </div>
     </div>
 </div>
-<!-- /ko -->

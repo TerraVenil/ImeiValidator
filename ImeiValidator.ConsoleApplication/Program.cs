@@ -2,6 +2,7 @@
 
 using Autofac;
 
+using ImeiValidator.BusinessLayer;
 using ImeiValidator.WebService;
 
 namespace ImeiValidator.ConsoleApplication

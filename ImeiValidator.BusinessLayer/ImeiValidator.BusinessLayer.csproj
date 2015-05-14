@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3BAF7F4A-936C-496F-9FE6-3591B5BCF694}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{EFA0F96F-8721-4E9A-886C-8C686112210A}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ImeiValidator.ConsoleApplication</RootNamespace>
-    <AssemblyName>ImeiValidator.ConsoleApplication</AssemblyName>
+    <RootNamespace>ImeiValidator.BusinessLayer</RootNamespace>
+    <AssemblyName>ImeiValidator.BusinessLayer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,10 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Autofac.3.3.1\lib\net40\Autofac.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,21 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsoleDataRegistrations.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="IImeiProvider.cs" />
+    <Compile Include="ImeiProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ImeiValidator.BusinessLayer\ImeiValidator.BusinessLayer.csproj">
-      <Project>{efa0f96f-8721-4e9a-886c-8c686112210a}</Project>
-      <Name>ImeiValidator.BusinessLayer</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ImeiValidator.WebService\ImeiValidator.WebService.csproj">
-      <Project>{95CDC8BF-0247-44BC-A414-572A3DD2752D}</Project>
+      <Project>{95cdc8bf-0247-44bc-a414-572a3dd2752d}</Project>
       <Name>ImeiValidator.WebService</Name>
     </ProjectReference>
   </ItemGroup>

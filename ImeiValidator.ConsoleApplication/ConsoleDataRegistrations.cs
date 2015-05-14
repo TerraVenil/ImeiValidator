@@ -1,5 +1,7 @@
 ﻿using Autofac;
 
+using ImeiValidator.BusinessLayer;
+
 namespace ImeiValidator.ConsoleApplication
 {
     public class ConsoleDataRegistrations : Module

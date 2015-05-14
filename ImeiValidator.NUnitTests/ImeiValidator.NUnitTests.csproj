@@ -52,13 +52,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ImeiValidator.BusinessLayer\ImeiValidator.BusinessLayer.csproj">
+      <Project>{efa0f96f-8721-4e9a-886c-8c686112210a}</Project>
+      <Name>ImeiValidator.BusinessLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ImeiValidator.WebService\ImeiValidator.WebService.csproj">
       <Project>{95cdc8bf-0247-44bc-a414-572a3dd2752d}</Project>
       <Name>ImeiValidator.WebService</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ImeiValidator\ImeiValidator.csproj">
-      <Project>{5a724687-762f-4f0f-81d2-dd4c197e3dfa}</Project>
-      <Name>ImeiValidator</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
