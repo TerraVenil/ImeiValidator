@@ -13,6 +13,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeiValidator.ConsoleApplic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeiValidator.NUnitTests", "ImeiValidator.NUnitTests\ImeiValidator.NUnitTests.csproj", "{92572474-78C0-4A45-81E4-6DFE8EFBAB9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeiValidator.WebApplication", "ImeiValidator.WebApplication\ImeiValidator.WebApplication.csproj", "{0A427D7C-E697-4CBE-B940-ED205570AABC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{DF3603DE-4064-4859-A36E-65E2D35CA5C9}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{BC7F5FD8-74E7-4EA4-BA8B-1194E2E76F23}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\ImeiValidatorWebApplication-WAWS-dev.json = PublishScripts\Configurations\ImeiValidatorWebApplication-WAWS-dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,8 +52,15 @@ Global
 		{92572474-78C0-4A45-81E4-6DFE8EFBAB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92572474-78C0-4A45-81E4-6DFE8EFBAB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92572474-78C0-4A45-81E4-6DFE8EFBAB9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A427D7C-E697-4CBE-B940-ED205570AABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A427D7C-E697-4CBE-B940-ED205570AABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A427D7C-E697-4CBE-B940-ED205570AABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A427D7C-E697-4CBE-B940-ED205570AABC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC7F5FD8-74E7-4EA4-BA8B-1194E2E76F23} = {DF3603DE-4064-4859-A36E-65E2D35CA5C9}
 	EndGlobalSection
 EndGlobal
