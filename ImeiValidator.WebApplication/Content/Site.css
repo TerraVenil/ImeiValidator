@@ -40,3 +40,21 @@
   max-width: 500px;
   margin: 30px auto 0;
 }
+
+@media (min-width: 992px) {
+    footer .footer-left {
+        text-align: left;
+    }
+}
+
+@media (min-width: 992px) {
+    footer .footer-right {
+        text-align: right;
+    }
+}
+
+@media (min-width: 992px) {
+    footer .footer-below {
+        text-align: center;
+    }
+}
