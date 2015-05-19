@@ -2,7 +2,7 @@
     <div class="container text-center">
         <h2>А ти впевнений що твій телефон білий?</h2>
         <h4>Перевір IMEI свого телефону і спи спокійно!</h4>
-        <div id="imei_validation">
+        <div id="imei_validation" data-bind="with: viewModels['imeiViewModel']">
             <div class="input-group input-group-lg" data-bind="with: requestImeiViewModel">
                 <input type="text" name="IMEI" class="form-control" id="imei-IMEI" placeholder="Введіть IMEI..." data-bind="value: number">
                 <span class="input-group-btn">
@@ -16,3 +16,27 @@
         </div>
     </div>
 </div>
+<section id="statistics">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Статистика запитів</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 pieChart-item">
+                <p>Кількість запитів по областях</p>
+                <canvas id="pie-chart1" width="360" height="260"></canvas>
+            </div>
+            <div class="col-sm-4 pieChart-item">
+                <p>Найбільш розшуковані номери</p>
+                <canvas id="pie-chart2" width="360" height="260"></canvas>
+            </div>
+            <div class="col-sm-4 pieChart-item">
+                <p>Кількість чорних та білих номерів</p>
+                <canvas id="pie-chart3" width="360" height="260"></canvas>
+            </div>
+        </div>
+    </div>
+</section>

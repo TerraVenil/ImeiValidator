@@ -1,6 +1,4 @@
-﻿var imeiViewModel;
-
-function ImeiRequest(number) {
+﻿function ImeiRequest(number) {
     var self = this;
 
     self.number = ko.observable(number);
@@ -14,7 +12,7 @@ function ImeiRequest(number) {
             data: requestObject,
             contentType: 'application/json',
             success: function (respone) {
-                imeiViewModel.responseImeiViewModel.status(respone.status);
+                app.viewModels['imeiViewModel'].responseImeiViewModel.status(respone.status);
             }
         });
     }
@@ -25,9 +23,3 @@ function ImeiResponse(status) {
 
     self.status = ko.observable(status);
 }
-
-imeiViewModel = { requestImeiViewModel: new ImeiRequest(), responseImeiViewModel: new ImeiResponse() }
-
-$(document).ready(function () {
-    ko.applyBindings(imeiViewModel);
-});

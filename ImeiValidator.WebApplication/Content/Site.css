@@ -21,6 +21,8 @@
     padding-top: 20px;
 }
 
+/* Imei validation */
+
 @media only screen and (max-width: 767px) {
     .nofloat {
         float: none;
@@ -29,16 +31,16 @@
 }
 
 .cta-imei {
-  color: #fff;
-  background-color: #b84d45;
-  background-image: url(/assets/img/bg.png);
-  padding: 50px 0;
-  margin-top: 50px;
+    color: #fff;
+    background-color: #b84d45;
+    background-image: url(/assets/img/bg.png);
+    padding: 50px 0;
+    margin-top: 50px;
 }
 
 .cta-imei .input-group {
-  max-width: 500px;
-  margin: 30px auto 0;
+    max-width: 500px;
+    margin: 30px auto 0;
 }
 
 @media (min-width: 992px) {
@@ -57,4 +59,69 @@
     footer .footer-below {
         text-align: center;
     }
+}
+
+/* Statistics */
+
+section {
+    padding: 10px 0;
+}
+
+#statistics * {
+    z-index: 2;
+}
+
+section h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+hr.star-primary {
+    border-color: #2c3e50;
+}
+
+hr.star-light, hr.star-primary {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+
+hr.star-primary:after {
+    color: #2c3e50;
+    background-color: #fff;
+}
+
+hr.star-light:after, hr.star-primary:after {
+    content: "\f005";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+@media (min-width: 767px) {
+    #statistics .pieChart-item {
+        margin: 0 0 30px;
+    }
+}
+
+#statistics .pieChart-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
 }

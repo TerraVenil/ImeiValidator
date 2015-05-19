@@ -20,8 +20,12 @@ namespace ImeiValidator.WebApplication
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                 "~/Scripts/sammy-{version}.js",
+                "~/Scripts/Chart.js",
                 "~/Scripts/app/common.js",
-                "~/Scripts/app/ImeiViewModel.js"));
+                "~/Scripts/app/imei.viewmodel.js",
+                "~/Scripts/app/piechart.viewmodel.js",
+                "~/Scripts/app/app.viewmodel.js",
+                "~/Scripts/app/_run.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -32,9 +36,12 @@ namespace ImeiValidator.WebApplication
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                 "~/Content/bootstrap.css",
+            bundles.Add(new StyleBundle("~/Content/cssStyles").Include(
+                "~/Content/bootstrap.css",
                  "~/Content/Site.css"));
+
+            BundleTable.Bundles.Add(new StyleBundle("~/Content/fontawesome").Include(
+                "~/Content/css/font-awesome.css"));
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
