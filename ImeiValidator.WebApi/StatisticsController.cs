@@ -32,5 +32,15 @@ namespace ImeiValidator.WebApi
                            new ChartResponse { Label = "5896*", Value = 7, Color = "#CC6699" }
                        };
         }
+
+        [HttpGet, ActionName("getRelationPhones")]
+        public IList<ChartResponse> GetRelationPhones()
+        {
+            return new List<ChartResponse>
+                       {
+                           new ChartResponse { Label = "Чорні", Value = 75, Color = "#F7464A" },
+                           new ChartResponse { Label = "Білі", Value = 23, Color = "#4D5360" }
+                       };
+        }
     }
 }

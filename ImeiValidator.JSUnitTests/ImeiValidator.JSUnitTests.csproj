@@ -44,11 +44,11 @@
   <ItemGroup>
     <Content Include="Content\qunit-1.18.0.css" />
     <Content Include="Scripts\jquery.mockjax.js" />
-    <Content Include="tests\imei.viewmodeltests.js" />
+    <Content Include="Tests\imei.viewmodeltests.js" />
     <Content Include="Scripts\qunit-1.18.0.js" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="tests\chutzpah.json" />
+    <None Include="Tests\chutzpah.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
