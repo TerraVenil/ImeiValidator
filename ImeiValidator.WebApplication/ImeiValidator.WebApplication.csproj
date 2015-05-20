@@ -249,13 +249,13 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ImeiValidation.WebApi\ImeiValidation.WebApi.csproj">
-      <Project>{85f57cfe-b419-4df8-be8b-58fe599da66c}</Project>
-      <Name>ImeiValidation.WebApi</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ImeiValidator.BusinessLayer\ImeiValidator.BusinessLayer.csproj">
       <Project>{efa0f96f-8721-4e9a-886c-8c686112210a}</Project>
       <Name>ImeiValidator.BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImeiValidator.WebApi\ImeiValidator.WebApi.csproj">
+      <Project>{873f1067-6865-4bda-93ef-b5ee5678fa49}</Project>
+      <Name>ImeiValidator.WebApi</Name>
     </ProjectReference>
     <ProjectReference Include="..\ImeiValidator.WebService\ImeiValidator.WebService.csproj">
       <Project>{95cdc8bf-0247-44bc-a414-572a3dd2752d}</Project>

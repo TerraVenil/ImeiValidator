@@ -1,10 +1,9 @@
 ﻿using System.Web.Http;
 
-using ImeiValidation.WebApi.Models;
-
 using ImeiValidator.BusinessLayer;
+using ImeiValidator.WebApi.Models;
 
-namespace ImeiValidation.WebApi
+namespace ImeiValidator.WebApi
 {
     public class ImeiValidationController : ApiController
     {

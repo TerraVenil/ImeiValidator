@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ImeiValidation.WebApi")]
+[assembly: AssemblyTitle("ImeiValidator.WebApi")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ImeiValidation.WebApi")]
+[assembly: AssemblyProduct("ImeiValidator.WebApi")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("403cfc72-efc1-4160-8dcb-59ddda7d5d30")]
+[assembly: Guid("fcbc2e38-0eaa-4344-be6a-ad9b8d7ebde9")]
 
 // Version information for an assembly consists of the following four values:
 //

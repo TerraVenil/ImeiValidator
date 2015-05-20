@@ -1,6 +1,6 @@
 ﻿using Autofac;
 
-using ImeiValidation.WebApi;
+using ImeiValidator.WebApi;
 
 namespace ImeiValidator.WebApplication.AutofacModules
 {

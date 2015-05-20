@@ -1,4 +1,4 @@
-﻿namespace ImeiValidation.WebApi.Models
+﻿namespace ImeiValidator.WebApi.Models
 {
     public class ImeiResponse
     {
