@@ -1,0 +1,9 @@
+﻿{
+    "Framework": "qunit",
+    "References" : [
+        { "Path": "../../ImeiValidator.WebApplication/Scripts/jquery-1.10.2.js" },
+        { "Path": "../Scripts/jquery.mockjax.js" },
+        { "Path": "../../ImeiValidator.WebApplication/Scripts/knockout-2.3.0.js" },
+        { "Path": "../../ImeiValidator.WebApplication/Scripts/app/imei.viewmodel.js" }
+    ]
+}

@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\qunit-1.18.0.css" />
+    <Content Include="Scripts\jquery.mockjax.js" />
+    <Content Include="Scripts\jquery.mockjax.min.js" />
     <Content Include="tests\imei.viewmodeltests.js" />
     <Content Include="Scripts\qunit-1.18.0.js" />
   </ItemGroup>
