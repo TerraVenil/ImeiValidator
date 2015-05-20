@@ -4,7 +4,7 @@
 
     self.viewModels = {
         imeiViewModel: { requestImeiViewModel: new ImeiRequest(), responseImeiViewModel: new ImeiResponse() },
-        pieChartViewModel : new PieChartViewModel()
+        pieChartViewModel : new PieChartViewModel().initialize()
     };
 }
 

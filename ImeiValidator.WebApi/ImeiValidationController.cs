@@ -14,7 +14,7 @@ namespace ImeiValidator.WebApi
             _imeiProvider = imeiProvider;
         }
 
-        [HttpPost]
+        [HttpPost, ActionName("validateImei")]
         public ImeiResponse ValidateImei(ImeiRequest request)
         {
             return new ImeiResponse { Status = _imeiProvider.GetImeiStatus(request.Number) };

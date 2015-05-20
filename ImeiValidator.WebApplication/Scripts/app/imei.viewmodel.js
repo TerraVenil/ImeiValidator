@@ -7,7 +7,7 @@
         var requestObject = ko.toJSON(this);
 
         $.ajax({
-            url: '/api/imeivalidation',
+            url: '/api/imeivalidation/validateImei',
             type: 'post',
             data: requestObject,
             contentType: 'application/json',
