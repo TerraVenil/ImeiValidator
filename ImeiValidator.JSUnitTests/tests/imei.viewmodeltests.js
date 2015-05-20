@@ -13,7 +13,7 @@
     qUnit.asyncTest("validate ImeiRequestViewModel with number", function () {
         var status;
         $.mockjax({
-            url: '/api/imeivalidation',
+            url: '/api/imeivalidation/validateImei',
             type: 'post',
             responseTime: 30,
             contentType: 'application/json',
