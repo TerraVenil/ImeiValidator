@@ -12,12 +12,12 @@
               data = ko.unwrap(allBindings.get('chartData')),
               options = ko.unwrap(allBindings.get('chartOptions')) || {};
 
-            if (this.chart) {
-                this.chart.destroy();
-                delete this.chart;
-            }
+            ko.utils.domNodeDisposal.addDisposeCallback(element, function () {
+                $(element).chart.destroy();
+                delete $(element).chart;
+            });
 
-            this.chart = new Chart(ctx)[type](data, options);
+            $(element).chart = new Chart(ctx)[type](data, options);
         }
     };
 
