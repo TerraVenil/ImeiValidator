@@ -46,6 +46,7 @@
     <Content Include="Scripts\jquery.mockjax.js" />
     <Content Include="Tests\imei.viewmodeltests.js" />
     <Content Include="Scripts\qunit-1.18.0.js" />
+    <Content Include="Tests\piechart.viewmodeltests.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Tests\chutzpah.json" />

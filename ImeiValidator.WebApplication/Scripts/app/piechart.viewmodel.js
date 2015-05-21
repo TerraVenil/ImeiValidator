@@ -1,6 +1,27 @@
 ﻿function PieChartViewModel() {
     var self = this;
 
+    self.dummyRegions = ko.observable();
+    self.dummyPhoneNumbers = ko.observable();
+    self.dummyPhones = ko.observable();
+
+    var regionsData, phoneNumbersData, phonesData;
+
+    self.regions = ko.computed(function () {
+        self.dummyRegions();
+        return regionsData;
+    }, this);
+
+    self.phoneNumbers = ko.computed(function () {
+        self.dummyPhoneNumbers();
+        return phoneNumbersData;
+    }, this);
+
+    self.phones = ko.computed(function () {
+        self.dummyPhones();
+        return phonesData;
+    }, this);
+
     self.initialize = function () {
         loadStatisticByRegions();
         loadMostPopularMaskNumbers();
@@ -13,8 +34,8 @@
             type: 'get',
             contentType: 'application/json',
             success: function (respone) {
-                var context1 = document.getElementById('pie-chart1').getContext('2d');
-                var pieChart1 = new Chart(context1).Pie(respone);
+                regionsData = respone;
+                self.dummyRegions.notifySubscribers();
             }
         });
     };
@@ -25,8 +46,8 @@
             type: 'get',
             contentType: 'application/json',
             success: function (respone) {
-                var context2 = document.getElementById('pie-chart2').getContext('2d');
-                var pieChart2 = new Chart(context2).Pie(respone);
+                phoneNumbersData = respone;
+                self.dummyPhoneNumbers.notifySubscribers();
             }
         });
     };
@@ -37,8 +58,8 @@
             type: 'get',
             contentType: 'application/json',
             success: function (respone) {
-                var context3 = document.getElementById('pie-chart3').getContext('2d');
-                var pieChart3 = new Chart(context3).Pie(respone);
+                phonesData = respone;
+                self.dummyPhones.notifySubscribers();
             }
         });
     };

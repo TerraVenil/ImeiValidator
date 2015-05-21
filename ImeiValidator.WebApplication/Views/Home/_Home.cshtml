@@ -24,18 +24,18 @@
                 <hr class="star-primary">
             </div>
         </div>
-        <div class="row">
+        <div class="row" data-bind="with: viewModels['pieChartViewModel']">
             <div class="col-sm-4 pieChart-item">
                 <p>Кількість запитів по областях</p>
-                <canvas id="pie-chart1" width="360" height="260"></canvas>
+                <canvas id="pie-chart1" width="360" height="260" data-bind="chartType: 'Pie', chartData: regions"></canvas>
             </div>
             <div class="col-sm-4 pieChart-item">
                 <p>Найбільш розшуковані номери</p>
-                <canvas id="pie-chart2" width="360" height="260"></canvas>
+                <canvas id="pie-chart2" width="360" height="260" data-bind="chartType: 'Pie', chartData: phoneNumbers"></canvas>
             </div>
             <div class="col-sm-4 pieChart-item">
                 <p>Кількість чорних та білих номерів</p>
-                <canvas id="pie-chart3" width="360" height="260"></canvas>
+                <canvas id="pie-chart3" width="360" height="260" data-bind="chartType: 'Pie', chartData: phones"></canvas>
             </div>
         </div>
     </div>

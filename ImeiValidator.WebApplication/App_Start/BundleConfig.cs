@@ -21,6 +21,7 @@ namespace ImeiValidator.WebApplication
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                 "~/Scripts/sammy-{version}.js",
                 "~/Scripts/Chart.js",
+                "~/Scripts/knockout.chart.extension.js",
                 "~/Scripts/app/common.js",
                 "~/Scripts/app/imei.viewmodel.js",
                 "~/Scripts/app/piechart.viewmodel.js",
