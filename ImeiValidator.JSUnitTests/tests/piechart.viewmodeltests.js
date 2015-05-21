@@ -1,7 +1,6 @@
 ﻿(function ($, qUnit, pieChartViewModel) {
     "use strict";
     qUnit.asyncTest("initialize PieChartViewModel", function () {
-        var statisticByRegions, mostPopularMaskNumbers, relationPhones;
         $.mockjax({
             url: '/api/Statistics/getStatisticByRegions',
             type: 'get',
