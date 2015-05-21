@@ -21,6 +21,14 @@
     padding-top: 20px;
 }
 
+/* Navigation */
+
+@media (min-width: 768px) {
+    .navbar-fixed-top {
+        padding: 5px 0;
+    }
+}
+
 /* Imei validation */
 
 @media only screen and (max-width: 767px) {
@@ -35,7 +43,6 @@
     background-color: #b84d45;
     background-image: url(/assets/img/bg.png);
     padding: 50px 0;
-    margin-top: 50px;
 }
 
 .cta-imei .input-group {
