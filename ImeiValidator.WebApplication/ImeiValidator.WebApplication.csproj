@@ -190,6 +190,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebApplicationConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\img\bg.png" />
