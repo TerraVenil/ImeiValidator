@@ -75,6 +75,46 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/feedback_me")
     @RenderSection("Scripts", required: false)
+    
+    <script>
+        $(document).ready(function() {
+            var fmOptions = {
+                bootstrap: true,
+                name_placeholder: "Введіть ім'я",
+                show_email: true,
+                email_placeholder: "Введіть електронну скриньку",
+                email_required: true,
+                message_placeholder: "Продовжуйте набирати своє повідомлення тут...",
+                feedback_url: "https://api.sendgrid.com/api/mail.send.json",
+                custom_params: {
+                    feedback_type: "bootstarp",
+                    api_user: "kosunix",
+                    api_key: "qUEKsgcB0DGtbC3NaJJm",
+                    to: "kosunix@gmail.com",
+                    toname: "Oleksii",
+                    subject: "Відгук"
+                },
+                delayed_options: {
+                    success_color: "#5cb85c",
+                    fail_color: "#d2322d",
+                    delay_success_milliseconds: 3500,
+                    send_success: "Дякую за ваш відгук :)",
+                    sending: 'Віправляється',
+                    send_fail: 'Відправка не вдалася'
+                },
+                title_label: 'Відгук',
+                trigger_label: '&#9679;Відгук&#9679;',
+                name_label: "Ім'я",
+                email_label: "Скринька",
+                message_label: 'Повідомлення',
+                submit_label: 'Відправити'
+            };
+
+            //init feedback_me plugin
+            fm.init(fmOptions);
+        });
+    </script>
 </body>
 </html>

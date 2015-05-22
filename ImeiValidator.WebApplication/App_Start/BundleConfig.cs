@@ -37,8 +37,12 @@ namespace ImeiValidator.WebApplication
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/feedback_me").Include(
+                "~/Scripts/jquery.feedback_me.js"));
+
             bundles.Add(new StyleBundle("~/Content/cssStyles").Include(
                 "~/Content/bootstrap.css",
+                "~/Content/jquery.feedback_me.css",
                  "~/Content/Site.css"));
 
             BundleTable.Bundles.Add(new StyleBundle("~/Content/fontawesome").Include(
