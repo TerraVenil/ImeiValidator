@@ -619,9 +619,10 @@ var fm = (function ($) {
 		}
 
 		dataArray = {
-			name: $fm_content.find(".feedback_name").val(),
+            /* Exclude from request due to SendGrid Web Api */
+		    /*name: $fm_content.find(".feedback_name").val(),
 			message: $fm_content.find(".feedback_message").val(),
-			email: $fm_content.find(".feedback_email").val(),
+			email: $fm_content.find(".feedback_email").val(),*/
 			radio_list_value: $fm_content.find(".feedback_me_form input[name=feedback_radio]:checked").val(),
             /* Extension for SendGrid API */
 			text: $fm_content.find(".feedback_message").val(),
