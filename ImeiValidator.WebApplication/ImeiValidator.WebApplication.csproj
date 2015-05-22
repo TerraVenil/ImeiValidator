@@ -218,6 +218,8 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Chart.js" />
     <Content Include="Scripts\Chart.min.js" />
+    <Content Include="Scripts\disqus.js" />
+    <Content Include="Scripts\fb.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery.feedback_me.js" />
@@ -231,6 +233,8 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\sammy-0.7.4.js" />
     <Content Include="Scripts\sammy-0.7.4.min.js" />
+    <Content Include="Scripts\vk.js" />
+    <Content Include="Scripts\zopim.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Scripts\app\common.js" />
     <Content Include="Views\_ViewStart.cshtml" />

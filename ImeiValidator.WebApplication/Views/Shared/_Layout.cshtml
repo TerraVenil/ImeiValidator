@@ -9,21 +9,13 @@
     @Styles.Render("~/Content/fontawesome")
     @Scripts.Render("~/bundles/modernizr")
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
-    <script type="text/javascript">
-        VK.init({ apiId: 4926384, onlyWidgets: true });
-    </script>
+    <script type="text/javascript" src="~/Scripts/fb.js"></script>
+    <script type="text/javascript" src="~/Scripts/vk.js"></script>
+    <script type="text/javascript" src="~/Scripts/disqus.js"></script>
+    <script type="text/javascript" src="~/Scripts/zopim.js"></script>
 </head>
 <body>
     <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1431410790497947";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="collapse navbar-collapse">
@@ -38,9 +30,7 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
     <div class="container body-content">
         @RenderBody()
@@ -55,9 +45,6 @@
                         </p>
                         <p>
                             <div id="vk_like"></div>
-                            <script type="text/javascript">
-                                VK.Widgets.Like("vk_like", { type: "mini" });
-                            </script>
                         </p>
                     </div>
                     <div class="col-md-6 footer-right">
@@ -72,17 +59,6 @@
             </div>
         </footer>
         <div id="disqus_thread"></div>
-        <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES * * */
-            var disqus_shortname = 'imei-validation';
-
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function () {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
     </div>
 
@@ -90,7 +66,7 @@
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/feedback_me")
     @RenderSection("Scripts", required: false)
-    
+
     <script>
         $(document).ready(function() {
             var fmOptions = {
