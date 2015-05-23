@@ -194,6 +194,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\img\bg.png" />
+    <Content Include="assets\img\d1ua.radius.png" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\font-awesome.css" />
